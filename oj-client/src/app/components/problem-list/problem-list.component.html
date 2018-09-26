@@ -1,0 +1,28 @@
+<!-- html 里面可以直接引用相关的ts里面的变量-->
+
+<div class="container">
+
+  <!-- <app-navigation-bar></app-navigation-bar> -->
+
+  <app-new-problem></app-new-problem> <!--在problemlist上面增添new problem 吧-->
+
+  <div class="list-group">
+    <a class="list-group-item" *ngFor="let problem of problems" [routerLink]="['/problems', problem.id]"> 
+      <!-- anckor 方括号内部的变量，和后面的值绑定, routerLink see: 
+      https://angular.io/api/router/RouterLink 
+    Consider the following route configuration: [{ path: 'user/:name', component: UserCmp }]. When linking to this user/:name route, you use the RouterLink directive.
+
+If the link is static, you can use the directive as follows: <a routerLink="/user/bob">link to user component</a>
+
+If you use dynamic values to generate the link, you can pass an array of path segments, followed by the params for each segment.
+
+For instance ['/team', teamId, 'user', userName, {details: true}] means that we want to generate a link to /team/11/user/bob;details=true
+-->
+      <span class="{{'pull-left label difficulty diff-' + problem.difficulty.toLocaleLowerCase()}}"> 
+        <!-- class 和css相对应，这里是拼凑的class，即， diff-easy, diff-medium, etc. -->
+        {{problem.difficulty}}
+      </span>
+      <strong class ="title">{{problem.id}}. {{problem.name}}</strong>
+    </a>
+  </div>
+</div>

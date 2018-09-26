@@ -1,0 +1,36 @@
+<!-- 收获：
+1. two way binding [(ngModel)]
+2. event binding (click) -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse main" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/problems">Problems</a>
+          </li>
+        </ul>
+
+        <form class="form-inline" >
+            <!-- The name attribute specifies the name of an <input> element. 
+            The name attribute is used to reference elements in a JavaScript, or 
+            to reference form data after a form is submitted. 
+            Note: Only form elements with a name attribute will have their values 
+            passed when submitting a form. -->
+          <input class="form-control mr-sm-2" name= "problemName" type="search" placeholder="Search problem name" 
+           [(ngModel)]="nameOfProblemToSearch">
+          <button class="btn btn-outline-success" (click)="searchProblem()">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+<!-- some extra space -->
+<div>&nbsp;</div> 
+
+
+
+
+ 

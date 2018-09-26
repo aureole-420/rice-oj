@@ -1,0 +1,20 @@
+
+<!-- 这里是reactive programming，随着用户界面变化而显示屏宽不同-->
+
+<div class="container" *ngIf="problem"> <!-- ngIf check一下problem是否存在，不存在就不显示-->
+  <div class="col-sm-12 col-md-4">
+    <div>
+      <h2>
+        {{problem.id}}. {{problem.name}}
+      </h2>
+      <p>
+        {{problem.desc}}
+      </p>
+    </div>
+  </div>
+
+  <div class="hidden-xs col-sm-12 col-md-8">
+    <app-editor></app-editor>
+  </div>
+</div>
+

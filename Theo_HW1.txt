@@ -1,0 +1,88 @@
+第一周理论课作业
+作业截止日期：
+
+PST 7:00 pm, 周三，05/23/2018
+EST 10:00 pm, 周三，05/23/2018
+北京 11:00 am, 周四，05/24/2018
+
+作业说明：
+
+理论课作业的目的是强化巩固学生对于本周课程难点要点的理解和印象加深的问题。我们会在作业提交截止后，公布作业正确答案。
+
+同学们可以根据理论课作业来指导预习和复习。建议同学们在1小时左右完成这些题目。建议用英文作答，每道题不要超过500个词。
+
+
+
+题目1. 简答题
+
+题目：
+Create a simple front end page similar to https://jsfiddle.net/afabbro/vrVAP/ 
+
+需要实现的功能是右下角框内的效果。其他3个框是它的源代码，供大家参考。作业在jsfiddle.net上完成。
+
+本题考查基本网页工作原理及HTML, CSS, Javascript的协作。网页内容上显示当前时间。
+参考资料
+1. https://www.w3schools.com/js/js_dates.asp
+
+
+
+题目2. 简答题
+
+题目：
+What is CSS selector? What is class selector and id selector? What‘s the difference between class selector and id selector
+
+
+本题考查CSS的基础css selectors.
+
+参考资料
+1. 30 css selectors https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048 
+2. CSS selectors: https://www.w3schools.com/cssref/css_selectors.asp
+3. CSS game, CSS Diner: https://flukeout.github.io/ 
+
+
+题目3. 简答题
+
+题目：
+What is Express middleware? 
+
+What is Application-level middleware?
+
+What is Router-level middleware?
+ 
+What is Error-handling middleware?
+此题考查对express.js以及express.js middleware的理解。在实战课中会使用middleware，提前预习。
+
+参考资料
+Express document: http://expressjs.com/en/guide/using-middleware.html 
+
+
+题目4. 选择题
+
+题目：
+Which of the following is true with respect to Node.
+
+A - Every API of Node js are asynchronous.
+B - Node being a single thread, and uses async function calls to maintain the concurrency.
+C - Node thread keeps an event loop and whenever any task get completed, it fires the corresponding event which signals the event listener function to get executed.
+D - All of the above.
+
+参考资料
+https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea
+
+
+题目5. 选择题
+
+题目：
+Which of the following class can be used to create a responsive table?
+A - .table-responsive   
+B - .responsive
+C - .active
+D - .table
+
+参考资料
+https://www.w3schools.com/bootstrap/bootstrap_ref_css_tables.asp
+
+
+
+
+
